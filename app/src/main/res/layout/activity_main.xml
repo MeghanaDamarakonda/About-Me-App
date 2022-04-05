@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:id="@+id/bio_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_16dp"
+    android:paddingEnd="@dimen/margin_16dp">
+
 
     <TextView
         android:id="@+id/name_text"
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:paddingTop="@dimen/padding_8dp"
         android:text="@string/rahana_dev"
-        android:textAlignment="center"
-        android:layout_marginTop="@dimen/margin_16dp"/>
+        android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/star_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:contentDescription="@string/yellow_star"
         app:srcCompat="@android:drawable/btn_star_big_on"
         tools:ignore="ImageContrastCheck" />
-</LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:text="@string/bio" />
+    </LinearLayout>
+    </ScrollView>
