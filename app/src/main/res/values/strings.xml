@@ -13,4 +13,6 @@
     \n\n my goal
     \n\n learning android gives me fun \n\n I am hoping for a great future in android
     </string>
+    <string name="Enter_your_nickname">Enter your nickname</string>
+    <string name="done">Done</string>
 </resources>
